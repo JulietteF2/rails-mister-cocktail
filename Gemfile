@@ -37,6 +37,8 @@ gem 'faker'
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
+gem 'dotenv-rails', groups: [:development, :test]
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

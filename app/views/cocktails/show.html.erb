@@ -1,6 +1,8 @@
-<div class="background-show" style="background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(<%= @cocktail.image_url %>);">
+<div class="background-show" style="background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('<%= cl_image_path @cocktail.image.key %>')">
+
+
   <div class="cocktail-card">
-    <%= image_tag @cocktail.image_url, alt: @cocktail.name, class: "cocktail-img" %>
+    <%= cl_image_tag @cocktail.image.key, height: 400, width: 280 %>
     <div class="cocktail-info">
       <h5><%= @cocktail.name %></h5>
       <hr>
@@ -11,7 +13,6 @@
       </div>
     <br>
     <%= link_to 'Modify the recipe', new_cocktail_dose_path(@cocktail), class: "btn btn-outline-info light-btn" %>
-  </div>
 </div>
 
 

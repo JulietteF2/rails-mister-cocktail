@@ -22,28 +22,30 @@ end
 
 puts "Created #{Ingredient.all.length}"
 
-Cocktail.create!(name: "Spritz", image_url: "https://images.unsplash.com/photo-1570598912132-0ba1dc952b7d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80")
+Cocktail.create!(name: "Spritz", image: cl_image_path("photo-1570598912132-0ba1dc952b7d_hijjrd"))
 
-Cocktail.create!(name: "Old Fashioned", image_url: "https://images.unsplash.com/photo-1560179304-6fc1d8749b23?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80")
+Cocktail.create!(name: "Old Fashioned", image: cl_image_path("photo-1560179304-6fc1d8749b23_orohnx"))
 
-Cocktail.create!(name: "Gin & Tonic", image_url: "https://images.unsplash.com/photo-1545438102-799c3991ffb2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80")
+Cocktail.create!(name: "Gin & Tonic", image: cl_image_path("photo-1545438102-799c3991ffb2_wi8udc"))
 
-Cocktail.create!(name: "Margarita", image_url: "https://images.unsplash.com/photo-1486428263684-28ec9e4f2584?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80")
+Cocktail.create!(name: "Margarita", image: cl_image_path("photo-1486428263684-28ec9e4f2584_hiy5rr"))
 
-Cocktail.create!(name: "Watermelon Caïpirinha", image_url: "https://images.unsplash.com/photo-1527661591475-527312dd65f5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=716&q=80")
+Cocktail.create!(name: "Watermelon Caïpirinha", image: cl_image_path("photo-1527661591475-527312dd65f5_epo6um"))
 
-Cocktail.create!(name: "Berry Fizz", image_url: "https://images.unsplash.com/photo-1527091755570-1daada653420?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=886&q=80")
+Cocktail.create!(name: "Berry Fizz", image: cl_image_path("photo-1527091755570-1daada653420_e33ytf"))
 
-Cocktail.create!(name: "Blue Lagoon", image_url: "https://images.unsplash.com/photo-1559842623-b82d2e1228a5?ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80")
+Cocktail.create!(name: "Blue Lagoon", image: cl_image_path("photo-1559842623-b82d2e1228a5_bt2nw8"))
 
-Cocktail.create!(name: "Mojito", image_url: "https://images.unsplash.com/photo-1551538827-9c037cb4f32a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=802&q=80")
+Cocktail.create!(name: "Mojito", image: cl_image_path("photo-1551538827-9c037cb4f32a_wwutwc"))
 
-Cocktail.create!(name: "Cosmopolitan", image_url: "https://images.unsplash.com/photo-1559842438-2942c907c8fe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80")
+Cocktail.create!(name: "Cosmopolitan", image: cl_image_path("photo-1559842438-2942c907c8fe_x7endt"))
 
-Cocktail.create!(name: "Frozen Test", image_url: "https://images.unsplash.com/photo-1497534446932-c925b458314e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=814&q=80")
+Cocktail.create!(name: "Frozen Test", image: cl_image_path("photo-1497534446932-c925b458314e_jpgjoo"))
 
-Cocktail.create!(name: "Pina Colada", image_url: "https://images.unsplash.com/photo-1577595166653-c4b06b30fa18?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80")
+Cocktail.create!(name: "Pina Colada", image: cl_image_path("photo-1577595166653-c4b06b30fa18_gkscnj"))
 
-Cocktail.create!(name: "Goyabakka", image_url: "https://images.unsplash.com/photo-1555940726-1c297abcc1f1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80")
+Cocktail.create!(name: "Goyabakka", image: cl_image_path("photo-1555940726-1c297abcc1f1_do2gkk"))
+
+
 
 puts "Created #{Cocktail.all.length}"

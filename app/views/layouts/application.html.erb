@@ -14,7 +14,6 @@
   </head>
 
   <body>
-    <% unless params[:controller] == "application" && params[:action] == "home" %>
       <div class="nav-bar fixed-top nav-bar-white">
         <div class="home nav-bar-left">
           <div class="logo"></div>
@@ -25,17 +24,16 @@
           <%= link_to "Add a Cocktail",new_cocktail_path, class: "btn btn-outline-info light-btn"  %>
         </div>
       </div>
-    <% end %>
 
     <%= yield %>
 
-      <script>
+<!--       <script>
         const navfade = document.querySelector('.nav-bar');
         if (document.querySelector('.card-grid')) {
           navfade.classList.add('nav-bar-fading');
           navfade.classList.remove('nav-bar-white');
         };
-      </script>
+      </script> -->
 
       <%= javascript_include_tag "application" %> <!-- from app/assets/javascripts/application.js -->
       <%= javascript_pack_tag "application" %>    <!-- from app/javascript/packs/application.js -->

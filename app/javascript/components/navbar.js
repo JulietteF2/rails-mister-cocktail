@@ -1,4 +1,10 @@
 const initUpdateNavbarOnScroll = () => {
+  const navfade = document.querySelector('.nav-bar');
+    if (document.querySelector('.card-grid')) {
+      navfade.classList.add('nav-bar-fading');
+      navfade.classList.remove('nav-bar-white');
+    };
+
   const navbar = document.querySelector('.nav-bar-fading');
   if (navbar) {
     window.addEventListener('scroll', () => {

@@ -24,6 +24,8 @@
   const link = trash["href"];
     if (window.confirm("Are you sure you want to delete that ingredient?")) {
     window.location = link;
+  } else {
+    event.stopPropagation();
   }
   });
 });

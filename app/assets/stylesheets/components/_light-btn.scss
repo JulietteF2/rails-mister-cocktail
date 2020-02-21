@@ -1,0 +1,13 @@
+.light-btn {
+  color: $light-blue;
+  height: 40px;
+  border-color: $blue;
+  &:hover {
+    background-color: $light-blue !important;
+    color: white !important;
+    border-color: rgba(0,0,0,0) !important;
+  }
+  &:focus {
+    box-shadow: 0px 0px 0px rgba(0,0,0,0) !important;
+  }
+}

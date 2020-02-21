@@ -14,7 +14,11 @@
 //
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
+import { initUpdateNavbarOnScroll } from '../components/navbar'
 
 import 'bootstrap';
+
+// call the function that we imported
+initUpdateNavbarOnScroll();
 
 console.log('Hello World from Webpacker')

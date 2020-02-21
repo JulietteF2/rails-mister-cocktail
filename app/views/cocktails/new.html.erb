@@ -1,0 +1,13 @@
+<div class="background-show" style="background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1550504549-8e32007a61e5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);">
+
+  <div class="form-card">
+    <h4>Create a new cocktail</h4>
+    <hr>
+    <%= simple_form_for [@cocktail] do |f| %>
+      <%= f.input :name, placeholder: 'Mojito, frozen margarita...' %>
+      <%= f.input :image_url %>
+      <br>
+      <%= f.submit class: 'btn btn-outline-info light-btn' %>
+    <% end %>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+.full-btn {
+  background-color: $light-blue !important;
+  height: 40px;
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.4) !important;
+    color: $light-blue !important;
+    border-color: $light-blue !important;
+  }
+  &:focus {
+    box-shadow: 0px 0px 0px rgba(0,0,0,0) !important;
+  }
+}

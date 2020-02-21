@@ -1,0 +1,13 @@
+<div class="background-show" style="background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(<%= @cocktail.image_url %>);">
+
+  <div class="form-card">
+    <h4>Add a dash of deliciousness to this <%= @cocktail.name %></h4>
+    <hr>
+    <%= simple_form_for [@cocktail, @dose] do |f| %>
+      <%= f.input :description, placeholder: '10cl, two drops of...' %>
+      <%= f.association :ingredient %>
+      <br>
+      <%= f.submit class: 'btn btn-outline-info light-btn' %>
+    <% end %>
+  </div>
+</div>
